@@ -1,6 +1,7 @@
 #include "Parsing.h"
 
 int main() {
-    ResolveExp exp("( Tirith A Frodo ) A N ( Saruman O Grima )");
+    string expresion = "( Tirith A Frodo ) A N ( Saruman O Grima )";
+    ResolveExp exp(expresion);
     return 0;
 }

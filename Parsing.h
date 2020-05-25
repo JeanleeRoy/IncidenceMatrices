@@ -28,13 +28,6 @@ class ResolveExp {
     stack<Token*> stack_tree;
     map<char,int> optr = {{'A',1},{'O',1},{'N',2},{'(',0},{')',0}};
 
-public:
-    explicit ResolveExp(string exp) : expression(std::move(exp)) {
-        loadTokens();
-        buildTree();
-        solution();
-    }
-
     void loadTokens() {
         string tkn, exp = expression + " ";
         for (int e = 0; e < exp.size(); ++e) {
@@ -174,6 +167,13 @@ public:
 
     void showTree() {
         printTree(root, 0);
+    }
+
+public:
+    explicit ResolveExp(string exp) : expression(std::move(exp)) {
+        loadTokens();
+        buildTree();
+        solution();
     }
 
 };

@@ -21,7 +21,7 @@ El formato es el siguiente:
 
     Word1 A Word2 A Word3
 
-Cabe reclcar que el programa soporta parentesis para indicar las prioridades en una consulta.
+Cabe recalcar que el programa soporta parentesis para indicar las prioridades en una consulta.
 De ese modo puedon existir consultas como:
 
     Word1 Or (Word2 And Word3)
@@ -42,7 +42,7 @@ Conocer los libros donde aparecen las palabras Gandalf y Acebeda.
 
 **Query:**
 
-    Gandalf a Acebeda
+    Gandalf A Acebeda
 
 **Resultado:**
 
