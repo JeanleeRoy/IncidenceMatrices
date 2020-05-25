@@ -46,8 +46,6 @@ class IncidenceMatrix {
             } else
                 word += c;
         }
-//        cout << "======" << endl << i << endl;
-//        cout << books[book_num].size() << endl;
     }
 
     void loadBooks() {
@@ -56,9 +54,7 @@ class IncidenceMatrix {
         for (int b_num = 0; b_num < TOTAL_BOOKS; ++b_num) {
             string book_name = "../docs/libro" + to_string(b_num + 1) + ".txt";
             book.open(book_name, ios::in);
-            //cout << "\n--(" << b_num+1 << ")--\n";
             while(getline(book,line)) {
-                //cout << line << endl;
                 getWords(line, b_num);
             }
             book.close();
